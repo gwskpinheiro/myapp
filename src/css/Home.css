@@ -1,0 +1,89 @@
+.home {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffeb3b;
+    background-image: linear-gradient(135deg, rgba(255, 235, 59, 0.5), rgba(255, 193, 7, 0.5));
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+    animation: fadeIn 1s ease-in-out;
+}
+
+.home h1 {
+    color: var(--primary-color);
+}
+
+.home p {
+    font-size: 20px;
+}
+
+/* Seção Sobre */
+.about {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    color: #d35400;
+}
+
+/* Horário de Funcionamento */
+.hours {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hours h2 {
+    color: #e67e22;
+}
+
+/* Galeria de Imagens */
+.gallery {
+    margin-top: 20px;
+}
+
+.gallery h2 {
+    color: #e74c3c;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.images img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-btn:hover {
+    background-color: #c0392b;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    background-color: #ffeb3b; /* Fundo amarelo para toda a página */
+    margin: 0;
+    padding: 0;
+}

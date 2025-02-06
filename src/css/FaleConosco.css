@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #d35400;
+    --light-background: #f9f9f9;
+    --input-border: #ddd;
+}
+
+.fale-conosco {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffeb3b; 
+    background-image: linear-gradient(135deg, rgba(255, 235, 59, 0.5), rgba(255, 193, 7, 0.5)); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    animation: fadeIn 1s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 80%;
+    max-width: 500px; 
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color); 
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
